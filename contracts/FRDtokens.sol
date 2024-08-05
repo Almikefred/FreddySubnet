@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract JAMTOKENS {
+contract FredTokens {
     uint public totalSupply;
     mapping(address => uint) public balanceOf;
     mapping(address => mapping(address => uint)) public allowance;
-    string public name = "JamesSubnet";
-    string public symbol = "JAM";
+    string public name = "FreddySubnet";
+    string public symbol = "FRD";
     uint8 public decimals = 18;
 
 		event Transfer(address indexed from, address indexed to, uint value);
