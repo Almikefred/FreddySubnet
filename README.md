@@ -1,5 +1,9 @@
 Creating an EVM-Subnet on Avalanche
+
+
 Overview
+
+
 This project establishes an EVM Subnet on the Avalanche network named "FreddySubnet," featuring its native token, GamersTokens (FRD). The network seamlessly integrates with MetaMask, enabling the deployment and interaction with smart contracts through the injected provider on Remix.
 
 Project Features
