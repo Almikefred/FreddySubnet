@@ -6,6 +6,7 @@ Overview
 
 This project establishes an EVM Subnet on the Avalanche network named "FreddySubnet," featuring its native token, GamersTokens (FRD). The network seamlessly integrates with MetaMask, enabling the deployment and interaction with smart contracts through the injected provider on Remix.
 
+
 Project Features
 These project will be interacting with two smart contracts an ERC20 token and a vault contract, these contracts should be able to:
 
@@ -23,18 +24,47 @@ Follow these steps to get the project up and running on your local machine.
 Prerequisites
 
 - Node.js and npm installed on your machine.
+
+  
   Clone the repository using the command - git clone https://github.com/username/projectname.git
+
+
   Change directory into your project file - cd projectname
+
+
   Install all dependencies with - npm install
+
+
   Compile the contract using Hardhat - npx hardhat compile
+
+
   Run deployment script- npx hardhat run scripts/deploy.js
+
+
   Tools Used
+
+
   Unix Computer (MacOS or Linux)
+
+
   Solidity
+
+
   Remix/Hardhat
+
+
   Metamask
+
+
   Web Browser
+
+
   Author
+
+
   Michael Alfred
+
+
   License
+  
   This project is licensed under the [freddy] License - see the LICENSE.md file for details
