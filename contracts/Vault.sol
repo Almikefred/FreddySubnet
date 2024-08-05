@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-interface IJAMTOKENS {
+interface IERC20 {
     function totalSupply() external view returns (uint);
 
     function balanceOf(address account) external view returns (uint);
@@ -23,13 +23,13 @@ interface IJAMTOKENS {
 }
 
 contract Vault {
-    IJAMTOKENS public immutable token;
+    IERC20 public immutable token;
 
     uint public totalSupply;
     mapping(address => uint) public balanceOf;
 
     constructor(address _token) {
-        token = IJAMTOKENS(_token);
+        token = IERC20(_token);
     }
 
     function _mint(address _to, uint _shares) private {
@@ -80,4 +80,3 @@ contract Vault {
         token.transfer(msg.sender, amount);
     }
 }
-
